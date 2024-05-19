@@ -1,6 +1,5 @@
 module Geometry where
 
--- Define your data types and functions
 data GeomExp = NoPoints
              | Point Double Double
              | Line Double Double
@@ -59,7 +58,6 @@ intersect (Line m b) (VerticalLine x1) = Point x1 (m * x1 + b)
 intersect (LineSegment x1 y1 x2 y2) (LineSegment x3 y3 x4 y4) = intersectLineSegments (LineSegment x1 y1 x2 y2) (LineSegment x3 y3 x4 y4)
 intersect _ _ = NoPoints  -- Handle other cases appropriately
 
--- Helper function for intersecting line segments (to be implemented)
 intersectLineSegments :: GeomExp -> GeomExp -> GeomExp
 intersectLineSegments (LineSegment x1 y1 x2 y2) (LineSegment x3 y3 x4 y4) = undefined
 
