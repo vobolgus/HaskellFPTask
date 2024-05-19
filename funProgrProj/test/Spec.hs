@@ -1,7 +1,7 @@
 import Test.HUnit
-import Geometry -- Import your geometry module
+import Geometry -- Import geometry module
 
--- Your test cases
+-- Test cases
 testPreprocess1 = TestCase (assertEqual "for (preprocessProg (LineSegment 1 1 1 1))," 
                                         (Point 1 1) 
                                         (preprocessProg (LineSegment 1 1 1 1)))
